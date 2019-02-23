@@ -28,3 +28,6 @@
 
 # Third party templates
 /vendor/templates
+
+# Swap files
+*.swp
