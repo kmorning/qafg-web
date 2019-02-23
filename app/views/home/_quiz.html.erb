@@ -49,11 +49,13 @@
     <section class="section section-components py-2">
       <div class="container">
         <div class="row justify-content-center">
-           <div class="col-lg-12">
-             <div>      
+          <div class="col-lg-12">
+            <div>      
               <%= image_tag( "afg/light_bulb_female.svg", style: "width: 100px; float: left; padding-right: 10px", class: "img-fluid" ) %> 
-              <p class="lead">If you have answered yes to any of these questions, Al-Anon or Alateen may be able to help.</p>
+              <p class="lead">If you have answered yes to any of these questions, Al-Anon or Alateen may be able to help.  You can find a meeting in your area using the link below, or give us a call at <b>1-866-951-3711</b> to speak directly with an Al-Anon member.</p>
+              <div class="text-center"><%= link_to 'Find a Meeting', '#', class: 'btn btn-warning mt-4' %></div>
             </div>
+            <%# link_to 'Find a Meeting', '#', class: 'btn btn-warning mt-4' %> 
           </div>
         </div>
       </div>
