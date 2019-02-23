@@ -11,6 +11,19 @@
             margin-left: .25rem;
         }
     }
+    // Consider change to mixin
+    .nav-link-brand {
+        font-size: $navbar-nav-link-font-size;
+        font-family: $navbar-nav-link-font-family;
+        font-weight: $navbar-nav-link-font-weight;
+        text-transform: $navbar-nav-link-text-transform;
+        letter-spacing: $navbar-nav-link-letter-spacing;
+        @include transition($navbar-transition);
+
+        .nav-link-inner--text {
+            margin-left: .25rem;
+        }
+    }
 }
 
 .navbar-brand {
@@ -65,6 +78,16 @@
             }
         }
         .nav-link {
+            padding-top: $navbar-nav-link-padding-y;
+            padding-bottom: $navbar-nav-link-padding-y;
+            border-radius: $navbar-nav-link-border-radius;
+
+            i {
+                margin-right: .625rem;
+            }
+        }
+
+        .nav-link-brand {
             padding-top: $navbar-nav-link-padding-y;
             padding-bottom: $navbar-nav-link-padding-y;
             border-radius: $navbar-nav-link-border-radius;
@@ -199,6 +222,25 @@
             .nav-link.active {
                 color: $navbar-dark-active-color;
             }
+
+            .nav-link-brand {
+                color: $navbar-dark-color;
+
+                @include hover-focus {
+                    color: $navbar-dark-hover-color;
+                }
+
+                &.disabled {
+                    color: $navbar-dark-disabled-color;
+                }
+            }
+
+            .show > .nav-link-brand,
+            .active > .nav-link-brand,
+            .nav-link-brand.show,
+            .nav-link-brand.active {
+                color: $navbar-dark-active-color;
+            }
         }
 
         .navbar-brand {
@@ -222,6 +264,10 @@
         .nav-link {
             padding: .625rem 0;
             color: theme-color("default") !important;
+        }
+
+        .nav-link-brand {
+            color: $navbar-dark-color; 
         }
 
         .dropdown-menu {
