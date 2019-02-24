@@ -1,0 +1,23 @@
+// Place all the styles related to the meetings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.coming-soon {
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 {
+        color: white;
+    }
+
+    hr {
+        //margin: auto;
+        width: 40%;
+        color: white;
+    }
+}
