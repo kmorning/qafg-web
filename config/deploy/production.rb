@@ -63,9 +63,9 @@
 set :stage, :production
 set :rvm_ruby_version, '2.6.0@qafg_web'
 
-server <%= ENV['QAFG_IP'] %>,
+server 'www.al-anon-quinte.ca',
   user: 'deploy',
   roles: %w{web app},
   ssh_options: {
-    keys: %w(/home/kmorning/keys/deploy)
+    keys: %w(/home/kmorning/keys/qafg_deploy)
   }
