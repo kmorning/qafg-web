@@ -16,5 +16,10 @@ module QafgWeb
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.time_zone = 'Eastern Time (US & Canada)'
+
+    # Use UUID's for primary keys
+    config.generators do |g|
+      g.orm :active_record, primary_key_type: :uuid
+    end
   end
 end
