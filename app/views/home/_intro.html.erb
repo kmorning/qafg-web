@@ -75,7 +75,10 @@
                     </div>
                     <p class="description mt-4">Visit one of the many meetings in our area to find out first hand what Al-Anon can offer you.  No formal referral is required.  The only requirement for membership is that there be a problem of alcoholism in a relative or friend.</p>
                     <div class="p-2"></div>
-                    <%= link_to 'Find a Meeting', meetings_path, class: 'btn btn-warning mt-4' %>
+                    <div>
+                    <%= link_to 'Find a Meeting', meetings_path, class: 'btn btn-warning mt-4', style: 'float: left' %>
+                    <p class="pt-3" style="font-size:11px">Available In:<br> <span id="countdown"></span></p>
+                    </div>
                   </div>
                 </div>
               </div>
