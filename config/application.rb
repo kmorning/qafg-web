@@ -16,6 +16,8 @@ module QafgWeb
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.time_zone = 'Eastern Time (US & Canada)'
+    # Don't serialize time fields with ActiveSupport::TimeWithZone - needed for TimeOfDay 
+    config.active_record.time_zone_aware_types = [:datetime]
 
     # Use UUID's for primary keys
     config.generators do |g|
