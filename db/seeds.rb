@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Meeting.create!([
+  {name: "Foxboro Alanon Group", day: "monday", time: #<Tod::TimeOfDay:0x00007ffff17612b0 @hour=20, @minute=0, @second=0, @second_of_day=72000>, location: "Emanuel United Church", street: "458 Ashley St", city: "Foxboro", category: 0, types: [], notes: nil},
+  {name: "Cobourg Alateen Meeting", day: "tuesday", time: #<Tod::TimeOfDay:0x00007ffff1774540 @hour=19, @minute=0, @second=0, @second_of_day=68400>, location: "Trinity United Church", street: "284 Division St, Room 227", city: "Cobourg", category: 1, types: [], notes: nil},
+  {name: "Serenity AFG", day: "tuesday", time: #<Tod::TimeOfDay:0x00007ffff1c27e48 @hour=19, @minute=0, @second=0, @second_of_day=68400>, location: "Trinity United Church", street: "284 Division St, Upstairs", city: "Cobourg", category: 0, types: ["C", "D"], notes: nil},
+  {name: "Campbellford AFG", day: "tuesday", time: #<Tod::TimeOfDay:0x00007ffff1c3f4f8 @hour=19, @minute=30, @second=0, @second_of_day=70200>, location: "Campbellford Memorial Hospital", street: "146 Oliver Rd", city: "Campbellford", category: 0, types: ["C", "D"], notes: nil},
+  {name: "Gratitude AFG", day: "tuesday", time: #<Tod::TimeOfDay:0x00007ffff1c4ac18 @hour=20, @minute=0, @second=0, @second_of_day=72000>, location: "Hope Centre", street: "46 King St", city: "Picton", category: 0, types: [], notes: nil},
+  {name: "Trenton AFG", day: "wednesday", time: #<Tod::TimeOfDay:0x00007ffff1c5e358 @hour=20, @minute=0, @second=0, @second_of_day=72000>, location: "Trenton United Church", street: "85 Dundas St", city: "Trenton", category: 0, types: ["C", "D"], notes: nil},
+  {name: "Belleville AFG", day: "tuesday", time: #<Tod::TimeOfDay:0x00007ffff1c71b60 @hour=20, @minute=0, @second=0, @second_of_day=72000>, location: "Eastminister United Church", street: "432 Bridge St", city: "Belleville", category: 0, types: ["C", "D", "X"], notes: nil},
+  {name: "New Beginnings AFG", day: "thursday", time: #<Tod::TimeOfDay:0x00007ffff1c88e00 @hour=9, @minute=30, @second=0, @second_of_day=34200>, location: "Trinity United Church", street: "284 Division St", city: "Cobourg", category: 0, types: ["X"], notes: nil},
+  {name: "New Beginnings AFG", day: "thursday", time: #<Tod::TimeOfDay:0x00007ffff1c9c798 @hour=10, @minute=0, @second=0, @second_of_day=36000>, location: "Columbia Presbyterian Church", street: "520 Bridge St", city: "Belleville", category: 0, types: ["X", "C", "D"], notes: nil},
+  {name: "Stirling AFG", day: "friday", time: #<Tod::TimeOfDay:0x00007ffff1ccfc10 @hour=20, @minute=0, @second=0, @second_of_day=72000>, location: "St. Andrews Church", street: "110 Mill St", city: "Stirling", category: 0, types: ["C", "D"], notes: nil},
+  {name: "Hope and Serentiy Group", day: "sunday", time: #<Tod::TimeOfDay:0x00007ffff1cf72b0 @hour=19, @minute=30, @second=0, @second_of_day=70200>, location: "Siskin Center, MFRC", street: "50 Rivers Dr E", city: "Trenton", category: 0, types: ["X"], notes: nil}
+])
