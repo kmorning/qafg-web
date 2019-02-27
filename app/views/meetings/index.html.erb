@@ -37,36 +37,37 @@
               <div class="col-lg-12 px-0">
                 <div class="card shadow border-0">
                   <div class="card-body py-5">
-                  <table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col">Day</th>
+                          <th scope="col">Time</th>
+                          <th scope="col">Location</th>
+                          <th scope="col">Street</th>
+                          <th scope="col">City</th>
+                          <!--th scope="col">Type</th-->
+                          <th scope="col">Notes</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <% @meetings.each do |meeting| %>
+                          <tr>
+                            <td>
+                              <%# link_to meeting.name, meeting_path(meeting) %>
+                              <%= meeting.name %>
+                            </td>
+                            <td><%= meeting.day.titleize %></td>
+                            <td><%= meeting.time.strftime("%l:%M %p") %></td>
+                            <td><%= meeting.location %></td>
+                            <td><%= meeting.street %></td>
+                            <td><%= meeting.city %></td>
+                            <!--td><%# meeting.category.titleize %></td-->
+                            <td><%= meeting.notes if meeting.notes %>
+                          </tr>
+                        <% end %>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>

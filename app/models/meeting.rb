@@ -1,5 +1,13 @@
 class Meeting < ApplicationRecord
   serialize :time, Tod::TimeOfDay
+
+  enum day: [:sunday,
+             :monday,
+             :tuesday,
+             :wednesday,
+             :thursday,
+             :friday,
+             :saturday]
   
   def time_str
     time.strftime("%l:%M %p") if time
