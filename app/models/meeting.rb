@@ -16,4 +16,8 @@ class Meeting < ApplicationRecord
   def time_str=(val)
     self.time = Tod::TimeOfDay.try_parse(val)
   end
+
+  def address
+    self.location + ", " + self.street
+  end
 end

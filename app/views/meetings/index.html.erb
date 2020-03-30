@@ -48,7 +48,6 @@
                           <th scope="col">Day</th>
                           <th scope="col">Time</th>
                           <th scope="col">Location</th>
-                          <th scope="col">Street</th>
                           <th scope="col">City</th>
                           <!--th scope="col">Type</th-->
                           <th scope="col">Notes</th>
@@ -63,8 +62,11 @@
                             </td>
                             <td><%= meeting.day.titleize %></td>
                             <td><%= meeting.time.strftime("%l:%M %p") %></td>
-                            <td><%= meeting.location %></td>
-                            <td><%= meeting.street %></td>
+                            <% if meeting.video_conference_url.present? %>
+                              <td><%= link_to "Online Meeting - Click to Join", meeting.video_conference_url, target: '_blank' %></td>
+                            <% else %>
+                              <td><%= meeting.address %></td>
+                            <% end %>
                             <td><%= meeting.city %></td>
                             <!--td><%# meeting.category.titleize %></td-->
                             <td><%= meeting.notes if meeting.notes %>
@@ -83,8 +85,12 @@
                       <%= meeting.name %>,
                       <%= meeting.day.titleize %>,
                       <%= meeting.time.strftime("%l:%M %p") %><br/>
-                      <%= meeting.location %><br/>
-                      <%= meeting.street %>,
+                      <% if meeting.video_conference_url.present? %>
+                        <td><%= link_to "Online Meeting - Click to Join", meeting.video_conference_url, target: '_blank' %></td><br/>
+                      <% else %>
+                        <%= meeting.location %><br/>
+                        <%= meeting.street %><br/>
+                      <% end %>
                       <%= meeting.city %><br/>
                       <%# meeting.category.titleize %>
                       <%= meeting.notes if meeting.notes %>
