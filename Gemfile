@@ -31,6 +31,9 @@ gem 'font-awesome-rails'
 # TimeOfDay
 gem 'tod', '~> 1.5.0'
 
+# high_voltage - for static pages like "about"
+gem 'high_voltage'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
