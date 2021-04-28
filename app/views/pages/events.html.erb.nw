@@ -1,0 +1,154 @@
+<% content_for :title do %>
+  Al-Anon Quinte - Events
+<% end %>
+
+<br>
+<div class="row">
+  <div class="small-12 content-columns">
+    <div class="text-panel">
+      <div class="row">
+        <div class="small-12 columns events-title">
+          <strong>Upcoming Events</strong>
+        </div>
+      </div>
+      </br>
+     <div class="row">
+        <div class="small-12 content-columns"><hr></div>
+      </div>
+
+      <!--div class="row">
+        <div class="small-3 medium-2 large-1 columns">
+          <div class="date-icon">
+            <h3>Mar</h3>
+            <h4>19</h4>
+          </div>
+        </div>
+
+        <div class="small-9 medium-10 large-11 content-columns event-detail">
+          <div class="event-detail-title">
+            <h2><%# link_to "Ontario Regional Conference of Alcoholics Anonymous", 'https://aaorc.ca/', target: '_blank' %></h2>
+          </div>
+          <div class="event-detail-date">
+            19-21 March 2021 
+          </div>
+          <div class="event-detail-venue">
+            <div>Online Zoom Meeting</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 content-columns"><hr></div>
+      </div-->
+
+      <!--div class="row">
+        <div class="small-3 medium-2 large-1 columns">
+          <div class="date-icon">
+            <h3>Mar</h3>
+            <h4>26</h4>
+          </div>
+        </div>
+
+        <div class="small-9 medium-10 large-11 content-columns event-detail">
+          <div class="event-detail-title">
+            <h2><%# link_to "Area 83 Virtual Assembly", 'https://area83aa.org/events/kingston-2', target: '_blank' %></h2>
+          </div>
+          <div class="event-detail-date">
+            26-28 March 2021
+          </div>
+          <div class="event-detail-venue">
+            <div>Online Zoom</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 content-columns"><hr></div>
+      </div>
+
+      <div class="row">
+        <div class="small-3 medium-2 large-1 columns">
+          <div class="date-icon">
+            <h3>Apr</h3>
+            <h4>17</h4>
+          </div>
+        </div>
+
+        <div class="small-9 medium-10 large-11 content-columns event-detail">
+          <div class="event-detail-title">
+            <h2><%# link_to "42nd Annual Ottawa Spring Conference", '/documents/Ottawa_Spring_Conference_2021.pdf', target: '_blank' %></h2>
+          </div>
+          <div class="event-detail-date">
+            17 April 2021 - Starts 8am
+          </div>
+          <div class="event-detail-venue">
+            <div>Online Zoom</div>
+            <div>Meeting ID: 823 0064 2904</div>
+            <div>Password: 20210417</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 content-columns"><hr></div>
+      </div-->
+
+      <div class="row">
+        <div class="small-3 medium-2 large-1 columns">
+          <div class="date-icon">
+            <h3>May</h3>
+            <h4>15</h4>
+          </div>
+        </div>
+
+        <div class="small-9 medium-10 large-11 content-columns event-detail">
+          <div class="event-detail-title">
+            <h2><%= link_to "District 25 Al-Anon Day", '/documents/2021_Alanon_Day_Flyer.pdf', target: '_blank' %></h2>
+          </div>
+          <div class="event-detail-date">
+            15 May 2021 - Meeting opens @9:15am
+          </div>
+          <div class="event-detail-venue">
+            <div>Online Zoom</div>
+            <div>Meeting ID: 845 0947 3822</div>
+            <div>Passcode: QuinteAFG</div>
+            <!--div><%# link_to "Enter Meeting", "https://us02web.zoom.us/j/82762662497?pwd=YTlTaHFldzJSbk1uWmVaRkU2ZTRJZz09", target: '_blank', class: "button" %></div-->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 content-columns"><hr></div>
+      </div>
+
+      <!--div class="row">
+        <div class="small-3 medium-2 large-1 columns">
+          <div class="date-icon">
+            <h3>Sep</h3>
+            <h4>30</h4>
+          </div>
+        </div>
+
+        <div class="small-9 medium-10 large-11 content-columns event-detail">
+          <div class="event-detail-title">
+            <h2><%# link_to "District 34 & 36 Conference", '/documents/District_34_36_Conference_2018.pdf', target: '_blank' %></h2>
+          </div>
+          <div class="event-detail-date">
+            30 September 2018 - Registration 9:30am 
+          </div>
+          <div class="event-detail-venue">
+            <div>Napanee Lions Hall</div>
+            <div>57 County Road 8</div>
+            <div>Napanee, ON</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 content-columns"><hr></div>
+      </div-->
+
+    </div>
+  </div>
+</div>
+
